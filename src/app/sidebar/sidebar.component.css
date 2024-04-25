@@ -1,0 +1,41 @@
+/* Style the links inside the sidenav */
+#mySidenav a {
+    margin-top:15%;
+    position: absolute; /* Position them relative to the browser window */
+    left: -310px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 350px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 30px; /* Increase font size */
+    color: white; /* White text color */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+  }
+  
+  #mySidenav a:hover {
+    left:0%; /* On mouse-over, make the elements appear as they should */
+    
+  }
+  
+  /* The about link: 20px from the top with a green background */
+  #checkbox {
+    top: 20px;
+
+    background-color:#103752;
+    
+  }
+  
+  #appeal {
+    top: 95px;
+    background-color:#0a6693; 
+  }
+  
+  #deliberation {
+    top: 170px;
+    background-color:#06a3dc; 
+  }
+ 
+  #Signout {
+    top: 245px;
+    background-color: #59c0e6
+  }

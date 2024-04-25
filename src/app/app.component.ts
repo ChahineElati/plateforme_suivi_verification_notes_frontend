@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'plateforme_suivi_verification_notes_frontend';
+
 }

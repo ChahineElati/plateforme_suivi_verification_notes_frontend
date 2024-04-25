@@ -1,0 +1,27 @@
+<div class="main-section">
+    <div class="table-container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>idCopie</th>
+            <th>Note Initiale</th>
+            <th>Note Après la vérification</th>
+            <th>Faute</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let copie of copies">
+            <td>{{ copie.idCopie.idCop }}</td>
+            <td class="form-check">{{ copie.noteInitiale }}</td>
+            <td class="form-check">
+              <input class="form-check-input" type="number" [(ngModel)]="copie.noteVerifProf" id="noteVerifProf{{ copie.idCopie.idCop}}">
+            </td>
+            <td class="form-check">
+              <input class="form-check-input" type="checkbox" [checked]="isMismatch(copie)" disabled>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  

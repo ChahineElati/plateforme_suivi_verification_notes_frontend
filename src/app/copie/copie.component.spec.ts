@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TablesComponent } from './tables.component';
+import { CopieComponent } from './copie.component';
 
-describe('TablesComponent', () => {
-  let component: TablesComponent;
-  let fixture: ComponentFixture<TablesComponent>;
+describe('CopieComponent', () => {
+  let component: CopieComponent;
+  let fixture: ComponentFixture<CopieComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [TablesComponent]
+      declarations: [CopieComponent]
     });
-    fixture = TestBed.createComponent(TablesComponent);
+    fixture = TestBed.createComponent(CopieComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

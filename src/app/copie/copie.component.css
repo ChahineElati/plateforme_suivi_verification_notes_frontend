@@ -1,0 +1,103 @@
+/* Réinitialisation des marges et des rembourrages pour le corps */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Utilisation d'une police de caractères spécifique */
+    background-color: white; /* Couleur de fond de la page */
+  }
+  
+  .main-section {
+    padding: 20px; /* Espacement intérieur de la section */
+    display: flex;
+    justify-content: flex-end; /* Aligner les éléments à l'extrémité droite */
+    align-items: flex-start; /* Aligner les éléments en haut */
+    min-height: 100vh; /* Hauteur minimale de la section égale à la hauteur de la fenêtre */
+  }
+  
+  
+  /* Style du conteneur du tableau */
+  .table-container {
+    transition: transform 0.3s ease;
+    width: 90%;
+    width: 1080px; /* Largeur maximale du conteneur */
+    overflow: hidden; /* Masquer le dépassement du contenu */
+    border-radius: 16px; /* Bordure arrondie du conteneur */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Ombre du conteneur */
+    margin: 0; /* Ajustement des marges */
+    margin-top: 20px; /* Marge supérieure pour placer le tableau sous la barre de navigation */
+    margin-left: auto; /* Aligner le tableau à droite */
+    margin-right: 20px; /* Marge droite pour l'espace entre le tableau et le bord de la page */
+  }
+  .table-container:hover {
+    transform: scale(1.05); /* Agrandissement du tableau au survol */
+  }
+  /* Style du tableau */
+  .table {
+    width: 100%; /* Largeur du tableau */
+    border-collapse: collapse;
+    background-color: #ffffff; /* Couleur de fond du tableau */
+    border-radius: 16px; /* Bordure arrondie du tableau */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Ombre du tableau */
+  }
+  /* Style des cellules au survol */
+  .table tr:hover td {
+    background-color: #f0f0f0; /* Changement de couleur au survol */
+    transition: background-color 0.3s ease; /* Transition fluide */
+  }
+  
+  /* Style des cellules lorsqu'elles sont touchées */
+  .table tr td:active {
+    background-color: #ccc; /* Changement de couleur lors du clic */
+  }
+  
+  /* Style des en-têtes de colonne */
+  .table th {
+    background-color: #103752; /* Couleur de fond des en-têtes */
+    color: white;
+    font-weight: bold;
+    padding: 16px 12px;
+    text-align: left;
+    border-bottom: 2px solid #fff; /* Bordure inférieure */
+  }
+  
+  /* Style des lignes impaires */
+  .table tr:nth-child(odd) {
+    background-color: #ffffff; /* Couleur de fond des lignes impaires */
+  }
+  
+  /* Style des lignes au survol */
+  .table tr:hover {
+    background-color: #f0f0f0; /* Couleur de fond au survol */
+  }
+  
+  /* Style des cellules */
+  .table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd; /* Bordure inférieure des cellules */
+  }
+  
+  /* Coins arrondis pour le coin supérieur gauche */
+  .table th:first-child {
+    border-top-left-radius: 16px;
+  }
+  
+  /* Coins arrondis pour le coin supérieur droit */
+  .table th:last-child {
+    border-top-right-radius: 16px;
+  }
+  
+  /* Coins arrondis pour le coin inférieur gauche */
+  .table tr:last-child td:first-child {
+    border-bottom-left-radius: 16px;
+  }
+  
+  /* Coins arrondis pour le coin inférieur droit */
+  .table tr:last-child td:last-child {
+    border-bottom-right-radius: 16px;
+  }
+  
+  /* Transition au survol */
+  .table tr {
+    transition: background-color 0.3s ease;
+  }
+  
